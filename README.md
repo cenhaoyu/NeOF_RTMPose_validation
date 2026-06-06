@@ -195,22 +195,3 @@ Overlay colors:
 ```bash
 pytest -q
 ```
-
-## Prepare For GitHub
-
-The generated `output/` directory, caches, local editor settings, videos, and
-model checkpoints are ignored by `.gitignore`.
-
-To upload this project to a new GitHub repository:
-
-```bash
-cd /home/haoyucen/Documents/rtmose_vali
-git init
-git add README.md environment.yml pyproject.toml .gitignore src tests
-git commit -m "Initial RTMPose triangulation validation workflow"
-git branch -M main
-git remote add origin git@github.com:<USER>/<REPO>.git
-git push -u origin main
-```
-
-Replace `<USER>/<REPO>` with the actual GitHub repository path.
