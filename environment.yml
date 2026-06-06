@@ -1,0 +1,16 @@
+name: rtmose_vali
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pip>=24
+      - setuptools
+      - wheel
+      - numpy<2
+      - opencv-python
+      - openmim
+      - mmengine
+      - pytest

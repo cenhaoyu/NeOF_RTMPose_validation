@@ -1,0 +1,2 @@
+"""Standalone RTMPose validation workflow."""
+

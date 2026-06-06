@@ -1,0 +1,23 @@
+[project]
+name = "rtmpose-triangulation-validation"
+version = "0.1.0"
+description = "RTMPose 2D pose estimation, DLT triangulation, and MPJPE validation for multi-view videos."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy<2",
+    "opencv-python",
+    "mmengine",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+validate-rtmpose-triangulation = "src.validate_rtmpose_triangulation:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
