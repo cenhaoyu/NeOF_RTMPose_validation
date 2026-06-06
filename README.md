@@ -190,8 +190,3 @@ Overlay colors:
 - Green: RTMPose 2D prediction.
 - Red: projected mocap 3D ground truth.
 
-## Tests
-
-```bash
-pytest -q
-```
